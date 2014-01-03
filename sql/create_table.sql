@@ -1,0 +1,10 @@
+CREATE TABLE raw1 (
+  id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+  `Symbol` int(11) DEFAULT NULL,
+  `Dateno` int(11) DEFAULT NULL,
+  `Open` float DEFAULT NULL,
+  `High` float DEFAULT NULL,
+  `Low` float DEFAULT NULL,
+  `Close` float DEFAULT NULL,
+  `Volume` int(11) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 
