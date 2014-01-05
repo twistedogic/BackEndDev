@@ -1,0 +1,6 @@
+.DS_Store
+thumbs.db
+*.log
+frontend/node_modules
+pureAPI/node_modules
+sqlorm/node_modules

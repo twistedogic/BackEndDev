@@ -1,19 +1,5 @@
-var anydbsql = require('anydb-sql');
-
-var db = anydbsql({
-    url: 'mysql://express:express@localhost:3306/db1'
+var Sequelize = require('sequelize');
+var sequelize = new Sequelize('mysql://express:express@localhost/db1');
+sequelize.query("SELECT * FROM raw1 WHERE id > 3699 and id < 0").success(function(myTableRows) {
+  console.log(myTableRows);
 });
-var user = db.define({
-    name: 'raw1',
-    columns: {
-        id: {primaryKey: true}, 
-        Symbol  : {},
-        Dateno  : {},
-        Open    : {},
-        High    : {},
-        Low     : {},
-        Close   : {},
-        Volume  : {}
-    }
-});
-
